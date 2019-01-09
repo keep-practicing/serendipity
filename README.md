@@ -6,7 +6,7 @@
 [![](https://img.shields.io/badge/python-3.7-blue.svg?logo=appveyor&style=flat)](https://img.shields.io/badge/python-3.7-blue.svg?logo=appveyor&style=flat)
 
 ### Array
-* [array](serendipity/linear_data_structures/array.py)
+* [array](serendipity/linear_structures/array.py)
 
 ### Stack
 
