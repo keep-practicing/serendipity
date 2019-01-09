@@ -1,5 +1,5 @@
 import unittest
-from serendipity.linear_data_structures.array import Array
+from serendipity.linear_structures.array import Array
 
 
 class TestArray(unittest.TestCase):
@@ -40,7 +40,7 @@ class TestArray(unittest.TestCase):
         try:
             array.add(6, 4)
         except IndexError:
-            pass
+            assert True
         else:
             assert False
         array.add(1, 5)
@@ -48,7 +48,7 @@ class TestArray(unittest.TestCase):
         try:
             array.get(20)
         except IndexError:
-            pass
+            assert True
         else:
             assert False
 
@@ -73,6 +73,42 @@ class TestArray(unittest.TestCase):
         array = Array([1, 2, 3])
         array.remove_last()
         self.assertEqual(array.find(3), -1)
+    
+    def test_remove(self):
+        array = Array([1, 2, 3, 4, 5, 6, 7, 8])
+        try:
+            array.remove(array.get_size())
+        except IndexError:
+            assert True
+        else:
+            assert False
+        array.remove_last()
+        self.assertEqual(array.get_capacity(), 8)
+        array.remove_last()
+        self.assertEqual(array.get_capacity(), 8)
+        array.remove_last()
+        self.assertEqual(array.get_capacity(), 8)
+        array.remove_last()
+        self.assertEqual(array.get_capacity(), 8)
+        array.remove_last()
+        self.assertEqual(array.get_capacity(), 8)
+        array.remove_last()
+        self.assertEqual(array.get_capacity(), 4)
+        array.remove_last()
+        self.assertEqual(array.get_capacity(), 2)
+        array.remove_last()
+        self.assertEqual(array.get_capacity(), 1)
+
+    def test_set(self):
+        array = Array([1, 2, 3, 4, 5, 6, 7, 8])
+        try:
+            array.set(array.get_size(), 8)
+        except IndexError:
+            assert True
+        else:
+            assert False
+        array.set(0, 10)
+        self.assertEqual(array.get_first(), 10)
 
     def test_magic_str(self):
         array = Array([1, 2, 3])
