@@ -12,6 +12,8 @@
 * [stack](serendipity/linear_structures/stack.py)
 
 ### Queue
+* [queue](serendipity/linear_structures/queue.py)
+* [loop queue](serendipity/linear_structures/loop_queue.py)
 
 ### Linked List
 
