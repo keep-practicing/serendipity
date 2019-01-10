@@ -2,7 +2,7 @@ import unittest
 from serendipity.linear_structures.array import Array
 
 
-class TestArray(unittest.TestCase):
+class ArrayTestCase(unittest.TestCase):
     def test_get_size(self):
         array = Array([1, 2, 3])
         self.assertEqual(array.get_size(), 3)

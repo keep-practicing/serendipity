@@ -9,6 +9,7 @@
 * [array](serendipity/linear_structures/array.py)
 
 ### Stack
+* [stack](serendipity/linear_structures/stack.py)
 
 ### Queue
 
