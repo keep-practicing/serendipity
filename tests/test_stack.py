@@ -1,5 +1,5 @@
 import unittest
-from serendipity.linear_structures.stack import ArrayStack
+from serendipity.linear_structures.array_stack import ArrayStack
 
 
 class ArrayStackTestCase(unittest.TestCase):

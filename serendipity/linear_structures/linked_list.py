@@ -81,10 +81,10 @@ class LinkedList:
         return ret.val
 
     def remove_first(self):
-        self.remove(0)
+        return self.remove(0)
 
     def remove_last(self):
-        self.remove(self._size-1)
+        return self.remove(self._size-1)
 
     def __str__(self):
         res = ""
