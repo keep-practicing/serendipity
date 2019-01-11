@@ -93,7 +93,7 @@ class Array:
     
     def __str__(self):
         return f"Array: {self._data[:self._size]}, capacity: {self.get_capacity()}"
-    
+
     def __repr__(self):
         return self.__str__()
 

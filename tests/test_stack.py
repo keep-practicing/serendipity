@@ -1,11 +1,11 @@
 import unittest
-from serendipity.linear_structures.stack import ArrayStack
+from serendipity.linear_structures.array_stack import ArrayStack
 
 
 class ArrayStackTestCase(unittest.TestCase):
     def setUp(self):
         self.stack = ArrayStack()
-    
+
     def test_stack_all_operate(self):
         self.stack.push(2)
         self.assertFalse(self.stack.is_empty())

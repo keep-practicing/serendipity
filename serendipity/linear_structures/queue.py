@@ -5,7 +5,7 @@ from serendipity.linear_structures.array import Array
 class ArrayQueue:
     def __init__(self, cap=0):
         self._array = Array(capacity=cap)
-    
+
     def get_size(self):
         return self._array.get_size()
 

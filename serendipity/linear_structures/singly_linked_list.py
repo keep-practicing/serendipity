@@ -4,10 +4,10 @@ class IllegalArgumentException(Exception):
 
 class LinkedList:
     class _Node:
-        def __init__(self, val=None, next=None):
+        def __init__(self, val=None, next_node=None):
             self.val = val
-            self.next = next
-        
+            self.next = next_node
+
         # def __str__(self):
         #     return str(self.val)
         
@@ -81,10 +81,10 @@ class LinkedList:
         return ret.val
 
     def remove_first(self):
-        self.remove(0)
+        return self.remove(0)
 
     def remove_last(self):
-        self.remove(self._size-1)
+        return self.remove(self._size-1)
 
     def __str__(self):
         res = ""
@@ -94,6 +94,6 @@ class LinkedList:
             cur = cur.next
         res += "NULL"
         return res
-    
+
     def __repr__(self):
         return self.__str__()

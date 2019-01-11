@@ -9,17 +9,13 @@ class LoopQueueTestCase(unittest.TestCase):
     def test_loop_queue_all_operate(self):
         try:
             self.queue.dequeue()
-        except QueueEmpty:
-            assert True
-        else:
-            assert False
+        except Exception as e:
+            self.assertTrue(isinstance(e, QueueEmpty))
 
         try:
             self.queue.get_front()
-        except QueueEmpty:
-            assert True
-        else:
-            assert False
+        except Exception as e:
+            self.assertTrue(isinstance(e, QueueEmpty))
 
         for i in range(10):
             self.queue.enqueue(i+1)
@@ -35,7 +31,7 @@ class LoopQueueTestCase(unittest.TestCase):
         for i in range(5):
             self.queue.dequeue()
         self.assertEqual(self.queue.get_capacity(), 20)
-        self.assertEqual(self.queue.get_size(), 6)        
+        self.assertEqual(self.queue.get_size(), 6)
         self.queue.dequeue()
         self.assertEqual(self.queue.get_capacity(), 10)
         self.assertEqual(self.queue.get_size(), 5)
