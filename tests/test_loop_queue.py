@@ -9,17 +9,13 @@ class LoopQueueTestCase(unittest.TestCase):
     def test_loop_queue_all_operate(self):
         try:
             self.queue.dequeue()
-        except QueueEmpty:
-            assert True
-        else:
-            assert False
+        except Exception as e:
+            self.assertTrue(isinstance(e, QueueEmpty))
 
         try:
             self.queue.get_front()
-        except QueueEmpty:
-            assert True
-        else:
-            assert False
+        except Exception as e:
+            self.assertTrue(isinstance(e, QueueEmpty))
 
         for i in range(10):
             self.queue.enqueue(i+1)

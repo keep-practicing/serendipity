@@ -39,18 +39,14 @@ class ArrayTestCase(unittest.TestCase):
         array = Array([1, 2, 3])
         try:
             array.add(6, 4)
-        except IndexError:
-            assert True
-        else:
-            assert False
+        except Exception as e:
+            self.assertTrue(isinstance(e, IndexError))
         array.add(1, 5)
         self.assertEqual(array.get(1), 5)
         try:
             array.get(20)
-        except IndexError:
-            assert True
-        else:
-            assert False
+        except Exception as e:
+            self.assertTrue(isinstance(e, IndexError))
 
     def test_contains_and_find(self):
          array = Array([1, 2, 3])
@@ -78,10 +74,8 @@ class ArrayTestCase(unittest.TestCase):
         array = Array([1, 2, 3, 4, 5, 6, 7, 8])
         try:
             array.remove(array.get_size())
-        except IndexError:
-            assert True
-        else:
-            assert False
+        except Exception as e:
+            self.assertTrue(isinstance(e, IndexError))
         array.remove_last()
         self.assertEqual(array.get_capacity(), 8)
         array.remove_last()
@@ -103,10 +97,8 @@ class ArrayTestCase(unittest.TestCase):
         array = Array([1, 2, 3, 4, 5, 6, 7, 8])
         try:
             array.set(array.get_size(), 8)
-        except IndexError:
-            assert True
-        else:
-            assert False
+        except Exception as e:
+            self.assertTrue(isinstance(e, IndexError))
         array.set(0, 10)
         self.assertEqual(array.get_first(), 10)
 
