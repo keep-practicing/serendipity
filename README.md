@@ -16,6 +16,7 @@
 * [loop queue](serendipity/linear_structures/loop_queue.py)
 
 ### Linked List
+* [single linked list](serendipity/linear_structures/linked_list.py)
 
 ### Tree
 
