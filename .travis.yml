@@ -17,6 +17,9 @@ script:
 
 after_success:
     - codecov
+    - python3 -m coverage xml
+    - export CODACY_PROJECT_TOKEN=f90d63ea93c545ce809763a193e2fa97
+    - python-codacy-coverage -r coverage.xml
 
 branches:
   only:
