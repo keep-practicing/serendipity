@@ -90,7 +90,7 @@ class Array:
         index = self.find(e)
         if index != -1:
             self.remove(index)
-    
+
     def __str__(self):
         return f"Array: {self._data[:self._size]}, capacity: {self.get_capacity()}"
 
