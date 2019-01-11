@@ -1,4 +1,4 @@
-from serendipity.linear_structures.linked_list import LinkedList
+from serendipity.linear_structures.singly_linked_list import LinkedList
 
 
 class LinkedListStack:
