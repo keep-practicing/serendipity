@@ -12,7 +12,7 @@ class LoopQueue:
 
     def get_capacity(self):
         return len(self._data) - 1  # 循环队列会浪费一个存储空间。
-    
+
     def is_empty(self):
         return self._front == self._tail
 

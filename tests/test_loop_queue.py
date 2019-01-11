@@ -35,7 +35,7 @@ class LoopQueueTestCase(unittest.TestCase):
         for i in range(5):
             self.queue.dequeue()
         self.assertEqual(self.queue.get_capacity(), 20)
-        self.assertEqual(self.queue.get_size(), 6)        
+        self.assertEqual(self.queue.get_size(), 6)
         self.queue.dequeue()
         self.assertEqual(self.queue.get_capacity(), 10)
         self.assertEqual(self.queue.get_size(), 5)

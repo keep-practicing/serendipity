@@ -5,7 +5,7 @@ from serendipity.linear_structures.queue import ArrayQueue
 class ArrayQueueTestCase(unittest.TestCase):
     def setUp(self):
         self.queue = ArrayQueue()
-    
+
     def test_queue_all_operate(self):
         self.queue.enqueue(4)
         self.queue.enqueue(5)

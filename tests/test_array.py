@@ -15,7 +15,7 @@ class ArrayTestCase(unittest.TestCase):
         array.add_last(5)
         self.assertEqual(array.get_capacity(), 2)
         array.add_last(5)
-        self.assertEqual(array.get_capacity(), 4)    
+        self.assertEqual(array.get_capacity(), 4)
         array.add_last(5)
         self.assertEqual(array.get_capacity(), 4)
         array.add_last(5)
@@ -73,7 +73,7 @@ class ArrayTestCase(unittest.TestCase):
         array = Array([1, 2, 3])
         array.remove_last()
         self.assertEqual(array.find(3), -1)
-    
+
     def test_remove(self):
         array = Array([1, 2, 3, 4, 5, 6, 7, 8])
         try:

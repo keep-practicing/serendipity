@@ -47,7 +47,7 @@ class LinkedListTestCase(unittest.TestCase):
             assert True
         else:
             assert False
-        
+
         linked.remove_last()
         self.assertEqual(linked.__str__(), "1->3->NULL")
         self.assertEqual(linked.__repr__(), "1->3->NULL")
