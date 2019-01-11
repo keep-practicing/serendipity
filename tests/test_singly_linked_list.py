@@ -20,8 +20,8 @@ class LinkedListTestCase(unittest.TestCase):
             self.assertTrue(e, IllegalArgumentException)
 
         self.assertEqual(linked.get_first(), 1)
-        assert linked.get(1), 3
-        assert linked.get_last(), 2
+        self.assertEqual(linked.get(1), 3)
+        self.assertEqual(linked.get_last(), 2)
 
         self.assertFalse(linked.contains(6))
         self.assertTrue(linked.contains(2))

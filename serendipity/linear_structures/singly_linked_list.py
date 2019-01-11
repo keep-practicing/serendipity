@@ -68,7 +68,7 @@ class LinkedList:
                 return True
             cur = cur.next
         return False
-    
+
     def remove(self, index):
         if index < 0 or index >= self._size:
             raise IllegalArgumentException("remove failed, illegal index.")
