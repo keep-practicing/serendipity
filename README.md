@@ -15,6 +15,7 @@
 ### Queue
 * [queue](serendipity/linear_structures/queue.py)
 * [loop queue](serendipity/linear_structures/loop_queue.py)
+* [queue implement by singly linked list](serendipity/linear_structures/singly_linked_list_queue.py)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**[note](docs/singly_linked_list_queue.md)**
 
 ### Linked List
 * [singly linked list](serendipity/linear_structures/singly_linked_list.py)
