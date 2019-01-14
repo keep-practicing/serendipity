@@ -82,7 +82,7 @@ class Array:
     
     def remove_first(self):
         return self.remove(0)
-    
+
     def remove_last(self):
         return self.remove(self._size-1)
 
