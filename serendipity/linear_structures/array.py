@@ -79,7 +79,7 @@ class Array:
         if self._size == self.get_capacity() // 4 and self.get_capacity() // 2 != 0:  # 防止时间复杂度震荡。
             self._resize(self.get_capacity() // 2)
         return ret
-    
+
     def remove_first(self):
         return self.remove(0)
 
