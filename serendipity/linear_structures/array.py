@@ -9,13 +9,13 @@ class Array:
             return
         self._data = [None]*capacity
         self._size = 0
-    
+
     def get_size(self) -> int:
         return self._size
-    
+
     def get_capacity(self) -> int:
         return len(self._data)
-    
+
     def is_empty(self) -> bool:
         return self._size == 0
 
@@ -46,7 +46,7 @@ class Array:
     def get_first(self):
         if self._size > 0:
             return self._data[0]
-    
+
     def get_last(self):
         if self._size > 0:
             return self._data[self._size-1]
@@ -61,7 +61,7 @@ class Array:
             if self._data[i] == e:
                 return True
         return False
-    
+
     def find(self, e):
         for i in range(self._size):
             if self._data[i] == e:
