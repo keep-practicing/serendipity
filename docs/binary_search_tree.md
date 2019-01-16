@@ -7,26 +7,24 @@
 ```cpp
 // in-order
 void InOrderNR(BTNode* root) {
-	//空树
 	if (root == NULL)
 		return;
-	//树非空
 	BTNode* p = root;
 	stack<BTNode*> s;
 	while (!s.empty() || p) {
-		//一直遍历到左子树最下边，边遍历边保存根节点到栈中
+		// 一直遍历到左子树最下边，边遍历边保存根节点到栈中
 		while (p)
 		{
 			s.push(p);
 			p = p->lchild;
 		}
-		//当p为空时，说明已经到达左子树最下边，这时需要出栈了
+		// 当p为空时，说明已经到达左子树最下边，这时需要出栈了
 		if (!s.empty())
 		{
 			p = s.top();
 			s.pop();
 			cout  << p->data << endl;
-			//进入右子树，开始新的一轮左子树遍历(这是递归的自我实现)
+			// 进入右子树，开始新的一轮左子树遍历(这是递归的自我实现)
 			p = p->rchild;
 		}
 	}
