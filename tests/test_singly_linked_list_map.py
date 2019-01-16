@@ -17,3 +17,4 @@ class MapTestCase(unittest.TestCase):
         self.map.add("c", 22)
         self.assertEqual(self.map.remove("b"), 23)
         self.assertIsNone(self.map.remove("n"))
+        self.assertEqual(self.map.get("a"), 66)

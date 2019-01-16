@@ -4,7 +4,7 @@ class Map:
             self.key = key
             self.value = value
             self.next = next_node
-    
+
     def __init__(self):
         self._dummy_head = self._Node()
         self._size = 0
@@ -21,7 +21,7 @@ class Map:
             if cur.key == key:
                 return cur
             cur = cur.next
-        return None
+        return
 
     def contains(self, key):
         return self.get_node(key) is not None
@@ -33,7 +33,9 @@ class Map:
     def add(self, key, val):
         node = self.get_node(key)
         if node is None:
-            self._dummy_head.next = self._Node(key=key, value=val, next_node=self._dummy_head.next)
+            self._dummy_head.next = self._Node(
+                key=key, value=val, next_node=self._dummy_head.next
+            )
             self._size += 1
         else:
             node.value = val
@@ -52,4 +54,4 @@ class Map:
             prev.next = prev.next.next
             self._size -= 1
             return ret
-        return 
+        return
