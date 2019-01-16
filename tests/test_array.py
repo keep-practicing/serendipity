@@ -49,11 +49,11 @@ class ArrayTestCase(unittest.TestCase):
             self.assertTrue(isinstance(e, IndexError))
 
     def test_contains_and_find(self):
-         array = Array([1, 2, 3])
-         self.assertTrue(array.contains(3))
-         self.assertFalse(array.contains(6))
-         self.assertEqual(array.find(2), 1)
-         self.assertEqual(array.find(6), -1)
+        array = Array([1, 2, 3])
+        self.assertTrue(array.contains(3))
+        self.assertFalse(array.contains(6))
+        self.assertEqual(array.find(2), 1)
+        self.assertEqual(array.find(6), -1)
 
     def test_remove_element(self):
         array = Array([1, 2, 3])

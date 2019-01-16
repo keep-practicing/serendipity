@@ -7,7 +7,7 @@ class QueueEmpty(Exception):
 
 class LoopQueue:
     def __init__(self, cap=10):
-        self._data = [None] * (cap+1)
+        self._data = [None] * (cap + 1)
         self._front = self._tail = self._size = 0
 
     def get_capacity(self):
@@ -21,20 +21,22 @@ class LoopQueue:
 
     # time complexity: O(1), 均摊时间复杂度。
     def enqueue(self, e):
-        if (self._tail+1) % len(self._data) == self._front:  # 队列满
-            self._resize(self.get_capacity()*2)
+        if (self._tail + 1) % len(self._data) == self._front:  # 队列满
+            self._resize(self.get_capacity() * 2)
         self._data[self._tail] = e
-        self._tail = (self._tail+1) % len(self._data)
+        self._tail = (self._tail + 1) % len(self._data)
         self._size += 1
 
     def dequeue(self):
         if self.is_empty():
             raise QueueEmpty("Cannot dequeue from an empty queue.")
         ret = self._data[self._front]
-        self._front = (self._front+1) % len(self._data)
+        self._front = (self._front + 1) % len(self._data)
         self._size -= 1
 
-        if self._size == self.get_capacity() // 4 and self.get_capacity() // 2 != 0:  # 防止复杂度震荡
+        if (
+            self._size == self.get_capacity() // 4 and self.get_capacity() // 2 != 0
+        ):  # 防止复杂度震荡
             self._resize(self.get_capacity() // 2)
         return ret
 
@@ -44,9 +46,9 @@ class LoopQueue:
         return self._data[self._front]
 
     def _resize(self, new_capacity):
-        new_data = [None] * (new_capacity+1)
+        new_data = [None] * (new_capacity + 1)
         for i in range(self._size):
-            new_data[i] = self._data[(i+self._front) % len(self._data)]
+            new_data[i] = self._data[(i + self._front) % len(self._data)]
         self._data = new_data
         self._front = 0
         self._tail = self._size

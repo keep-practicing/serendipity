@@ -18,7 +18,7 @@ class LoopQueueTestCase(unittest.TestCase):
             self.assertTrue(isinstance(e, QueueEmpty))
 
         for i in range(10):
-            self.queue.enqueue(i+1)
+            self.queue.enqueue(i + 1)
         self.assertEqual(self.queue.get_capacity(), 10)
         self.assertEqual(self.queue.get_size(), 10)
         self.assertFalse(self.queue.is_empty())
@@ -26,8 +26,14 @@ class LoopQueueTestCase(unittest.TestCase):
         self.assertEqual(self.queue.get_capacity(), 20)
         self.assertEqual(self.queue.get_size(), 11)
         self.assertEqual(self.queue.get_front(), 1)
-        self.assertEqual(self.queue.__str__(), "Queue: size = 11, capacity = 20, front [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] tail.")
-        self.assertEqual(self.queue.__repr__(), "Queue: size = 11, capacity = 20, front [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] tail.")
+        self.assertEqual(
+            self.queue.__str__(),
+            "Queue: size = 11, capacity = 20, front [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] tail.",
+        )
+        self.assertEqual(
+            self.queue.__repr__(),
+            "Queue: size = 11, capacity = 20, front [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] tail.",
+        )
         for i in range(5):
             self.queue.dequeue()
         self.assertEqual(self.queue.get_capacity(), 20)

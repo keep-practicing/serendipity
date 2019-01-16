@@ -51,7 +51,7 @@ class LinkedList:
         return self.get(0)
 
     def get_last(self):
-        return self.get(self._size-1)
+        return self.get(self._size - 1)
 
     def set(self, index, e):
         if index < 0 or index >= self._size:
@@ -84,7 +84,7 @@ class LinkedList:
         return self.remove(0)
 
     def remove_last(self):
-        return self.remove(self._size-1)
+        return self.remove(self._size - 1)
 
     def __str__(self):
         res = ""

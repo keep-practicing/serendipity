@@ -21,6 +21,7 @@
 * [singly linked list](serendipity/linear_structures/singly_linked_list.py)
 
 ### Tree
+* [binary search tree](serendipity/tree_structures/bst.py)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**[note](docs/binary_search_tree.md)**
 
 ### Graph
 
