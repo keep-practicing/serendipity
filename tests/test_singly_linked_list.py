@@ -1,5 +1,8 @@
 import unittest
-from serendipity.linear_structures.singly_linked_list import LinkedList, IllegalArgumentException
+from serendipity.linear_structures.singly_linked_list import (
+    LinkedList,
+    IllegalArgumentException,
+)
 
 
 class LinkedListTestCase(unittest.TestCase):

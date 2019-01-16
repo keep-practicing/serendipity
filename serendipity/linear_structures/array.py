@@ -2,12 +2,12 @@
 
 
 class Array:
-    def __init__(self, arr=None, capacity: int=0):
+    def __init__(self, arr=None, capacity: int = 0):
         if isinstance(arr, list):
             self._data = arr[:]
             self._size = len(arr)
             return
-        self._data = [None]*capacity
+        self._data = [None] * capacity
         self._size = 0
 
     def get_size(self) -> int:
@@ -27,14 +27,16 @@ class Array:
 
     def add(self, index: int, e):
         if index < 0 or index > self._size:
-            raise IndexError("Add failed. Require index >= 0 and index < index <= array sise.")
+            raise IndexError(
+                "Add failed. Require index >= 0 and index < index <= array sise."
+            )
         if self._size == self.get_capacity():
             if self._size == 0:
                 self._resize(1)
             else:
-                self._resize(2*self.get_capacity())
-        for i in range(self._size -1, index-1, -1):
-            self._data[i+1] = self._data[i]
+                self._resize(2 * self.get_capacity())
+        for i in range(self._size - 1, index - 1, -1):
+            self._data[i + 1] = self._data[i]
         self._data[index] = e
         self._size += 1
 
@@ -49,7 +51,7 @@ class Array:
 
     def get_last(self):
         if self._size > 0:
-            return self._data[self._size-1]
+            return self._data[self._size - 1]
 
     def set(self, index, e):
         if index < 0 or index >= self._size:
@@ -72,11 +74,13 @@ class Array:
         if not 0 <= index < self._size:
             raise IndexError("Remove failed. Index is illegal.")
         ret = self._data[index]
-        for i in range(index+1, self._size):
-            self._data[i-1] = self._data[i]
+        for i in range(index + 1, self._size):
+            self._data[i - 1] = self._data[i]
         self._size -= 1
 
-        if self._size == self.get_capacity() // 4 and self.get_capacity() // 2 != 0:  # 防止时间复杂度震荡。
+        if (
+            self._size == self.get_capacity() // 4 and self.get_capacity() // 2 != 0
+        ):  # 防止时间复杂度震荡。
             self._resize(self.get_capacity() // 2)
         return ret
 
@@ -84,7 +88,7 @@ class Array:
         return self.remove(0)
 
     def remove_last(self):
-        return self.remove(self._size-1)
+        return self.remove(self._size - 1)
 
     def remove_element(self, e):
         index = self.find(e)
