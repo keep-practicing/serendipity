@@ -4,6 +4,7 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/97bd89b51f684d3a8ebb9b1b93887665)](https://www.codacy.com/app/zwfang/serendipity?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=zwfang/serendipity&amp;utm_campaign=Badge_Grade)
 [![codecov](https://codecov.io/gh/zwfang/serendipity/branch/master/graph/badge.svg)](https://codecov.io/gh/zwfang/serendipity)
 [![](https://img.shields.io/badge/python-3.7-blue.svg?logo=appveyor&style=flat)](https://img.shields.io/badge/python-3.7-blue.svg?logo=appveyor&style=flat)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 
  > 数据结构是计算机中存储、组织数据的方式。
  > 
@@ -24,7 +25,7 @@
 
 *  数据结构应用
 
-    [集合set(底层结构为二分搜索树)](serendipity/set_and_map/bst_set.py)、[集合set(底层结构为单链表)](serendipity/set_and_map/singly_linked_list_set.py)、[映射map(底层结构为单链表)](serendipity/set_and_map/singly_linked_list_map.py)、[映射map(底层结构为二分搜索树)](serendipity/set_and_map/bst_map.py)
+    [集合set(底层结构为二分搜索树)](serendipity/set_and_map/bst_set.py)、[集合set(底层结构为单链表)](serendipity/set_and_map/singly_linked_list_set.py)、[映射map(底层结构为单链表)](serendipity/set_and_map/singly_linked_list_map.py)、[映射map(底层结构为二分搜索树)](serendipity/set_and_map/bst_map.py)、[优先队列-通过最大二叉堆实现](serendipity/tree_structures/priority_queue.py)
 
 ## 笔记
 [栈](docs/singly_linked_list_stack.md)、[队列](docs/singly_linked_list_queue.md)、[二分搜索树](docs/binary_search_tree.md)、[集合set](docs/set_time_complexity_analyse.md)、[映射map](docs/map_analyse.md)、[二叉堆](docs/max_heap.md)
