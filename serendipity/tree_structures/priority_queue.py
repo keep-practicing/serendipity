@@ -13,7 +13,7 @@ class PriorityQueue:
 
     def get_front(self):
         return self._max_heap.find_max()
-    
+
     def enqueue(self, e):
         self._max_heap.add(e)
 

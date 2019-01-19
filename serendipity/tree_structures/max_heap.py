@@ -6,7 +6,7 @@ class MaxHeap:
         if isinstance(arr, list):
             self._data = Array(arr)
             # heapify
-            for i in range((self.size()-1)//2, -1, -1):
+            for i in range((self.size() - 1) // 2, -1, -1):
                 self._sift_down(i)
         else:
             self._data = Array(capacity=capacity) if capacity else Array()

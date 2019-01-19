@@ -17,7 +17,7 @@ class MaxHeapTestCase(unittest.TestCase):
         heap_data = [heap.extract_max() for _ in range(heap.size())]
 
         for i in range(1, heap.size()):
-            self.assertGreater(heap_data[i], heap_data[i-1])
+            self.assertGreater(heap_data[i], heap_data[i - 1])
 
     def test_max_heap_without_heapify(self):
         for i in self.test_data:
@@ -28,4 +28,4 @@ class MaxHeapTestCase(unittest.TestCase):
         heap_data = [self.heap.extract_max() for _ in range(self.heap.size())]
         self.assertEqual(heap_data[0], 200)
         for i in range(1, self.heap.size()):
-            self.assertGreater(heap_data[i], heap_data[i-1])
+            self.assertGreater(heap_data[i], heap_data[i - 1])
