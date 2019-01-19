@@ -30,9 +30,9 @@
 [栈](docs/singly_linked_list_stack.md)、[队列](docs/singly_linked_list_queue.md)、[二分搜索树](docs/binary_search_tree.md)、[集合set](docs/set_time_complexity_analyse.md)、[映射map](docs/map_analyse.md)
 
 ## 数据存储结构---顺序存储、链接存储、索引存储、散列存储
->  顺序结构和链接结构适用在内存结构中。
+>  顺序存储和链接存储适用在内存结构中。
 > 
-> 索引结构和散列结构适用在外存与内存交互结构。
+> 索引存储和散列存储适用在外存与内存交互结构。
 1. 顺序存储
 
     顺序存储方式就是在一块连续的存储区域一个接着一个的存放数据。顺序存储方式把逻辑上相连的结点存储在物理位置上相邻的存储单元里。通常顺序存储结构是借助于计算机程序设计语言(例如，C/C++)的数组来描述。
