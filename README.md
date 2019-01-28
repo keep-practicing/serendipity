@@ -20,7 +20,7 @@
 2. 非线性结构
     > 一个结点可能有多个直接前趋和直接后继。
 
-    [二分搜索树](serendipity/tree_structures/bst.py)、[二叉堆-最大堆](serendipity/tree_structures/max_heap.py)
+    [二分搜索树](serendipity/tree_structures/bst.py)、[二叉堆-最大堆](serendipity/tree_structures/max_heap.py)、[线段树](serendipity/tree_structures/segment_tree.py)
 
 
 *  数据结构应用
@@ -28,7 +28,7 @@
     [集合set(底层结构为二分搜索树)](serendipity/set_and_map/bst_set.py)、[集合set(底层结构为单链表)](serendipity/set_and_map/singly_linked_list_set.py)、[映射map(底层结构为单链表)](serendipity/set_and_map/singly_linked_list_map.py)、[映射map(底层结构为二分搜索树)](serendipity/set_and_map/bst_map.py)、[优先队列-通过最大二叉堆实现](serendipity/tree_structures/priority_queue.py)
 
 ## 笔记
-[栈](docs/singly_linked_list_stack.md)、[队列](docs/singly_linked_list_queue.md)、[二分搜索树](docs/binary_search_tree.md)、[集合set](docs/set_time_complexity_analyse.md)、[映射map](docs/map_analyse.md)、[二叉堆](docs/max_heap.md)
+[栈](docs/singly_linked_list_stack.md)、[队列](docs/singly_linked_list_queue.md)、[二分搜索树](docs/binary_search_tree.md)、[集合set](docs/set_time_complexity_analyse.md)、[映射map](docs/map_analyse.md)、[二叉堆](docs/max_heap.md)、[线段树](docs/segment_tree.md)
 
 ## 数据存储结构---顺序存储、链接存储、索引存储、散列存储
 >  顺序存储和链接存储适用在内存结构中。
