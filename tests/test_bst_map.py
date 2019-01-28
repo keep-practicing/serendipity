@@ -9,7 +9,6 @@ class MapTsetCase(unittest.TestCase):
     def test_map(self):
         self.assertTrue(self.map.is_empty())
         self.assertEqual(self.map.get_size(), 0)
-
         self.map.add("g", 80)
         self.map.add("f", 81)
         self.map.add("c", 80)
