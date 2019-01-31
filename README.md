@@ -20,10 +20,10 @@
 2. 非线性结构
     > 一个结点可能有多个直接前趋和直接后继。
 
-    [二分搜索树](serendipity/tree_structures/bst.py)、[二叉堆-最大堆](serendipity/tree_structures/max_heap.py)、[线段树](serendipity/tree_structures/segment_tree.py)
+    [二分搜索树](serendipity/tree_structures/bst.py)、[二叉堆-最大堆](serendipity/tree_structures/max_heap.py)、[线段树](serendipity/tree_structures/segment_tree.py)、[Trie(字典树、前缀树)](serendipity/tree_structures/trie.py)
 
 
-*  数据结构应用
+*  数据结构应用(抽象数据结构)
 
     [集合set(底层结构为二分搜索树)](serendipity/set_and_map/bst_set.py)、[集合set(底层结构为单链表)](serendipity/set_and_map/singly_linked_list_set.py)、[映射map(底层结构为单链表)](serendipity/set_and_map/singly_linked_list_map.py)、[映射map(底层结构为二分搜索树)](serendipity/set_and_map/bst_map.py)、[优先队列-通过最大二叉堆实现](serendipity/tree_structures/priority_queue.py)
 
