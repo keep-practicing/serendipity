@@ -27,7 +27,7 @@ class Trie:
                 cur.next[i] = self._Node()
             cur = cur.next.get(i)
 
-        if not cur.is_word:
+        if not cur.is_word:  # pragma: no cover
             cur.is_word = True
             self._size += 1
 
