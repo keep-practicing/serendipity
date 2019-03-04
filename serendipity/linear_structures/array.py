@@ -99,11 +99,8 @@ class Array:
         # i, j must be valid index.
         self._data[i], self._data[j] = self._data[j], self._data[i]
 
-    def __str__(self):
-        return f"Array: {self._data[:self._size]}, capacity: {self.get_capacity()}"
-
     def __repr__(self):
-        return self.__str__()
+        return f"Array: {self._data[:self._size]}, capacity: {self.get_capacity()}"
 
     def _resize(self, new_capacity):
         new_data = [None] * new_capacity
