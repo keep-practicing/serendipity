@@ -104,11 +104,11 @@ class ArrayTestCase(unittest.TestCase):
 
     def test_magic_str(self):
         array = Array([1, 2, 3])
-        self.assertEqual(array.__str__(), "Array: [1, 2, 3], capacity: 3")
+        self.assertEqual(str(array), "Array: [1, 2, 3], capacity: 3")
 
     def test_magic_repr(self):
         array = Array([1, 2, 3])
-        self.assertEqual(array.__repr__(), "Array: [1, 2, 3], capacity: 3")
+        self.assertEqual(repr(array), "Array: [1, 2, 3], capacity: 3")
 
 
 if __name__ == "__main__":
